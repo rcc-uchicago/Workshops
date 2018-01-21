@@ -10,7 +10,8 @@ iris_df.columns=['s_l','s_w','p_l','p_w','target']
 #print a few lines from DataFrame
 iris_df.head()
 
-#load training set as features and target classes
+#crate training set as features and target classes
+#each as numpy array
 X=np.array(iris_df.drop('target',axis=1))
 y=np.array(iris_df.target)
 X.shape,y.shape
